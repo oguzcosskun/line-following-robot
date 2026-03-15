@@ -3,6 +3,7 @@
 An Arduino-based robot car developed as part of an **Embedded Systems Programming** course. The robot supports multiple operating modes and can be switched between them in real time using an IR remote control.
 
 ---
+![Robot](arduino_robot_araba.jpeg)
 
 ## Features
 
