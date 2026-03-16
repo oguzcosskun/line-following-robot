@@ -1,6 +1,6 @@
-#  Line-Following Autonomous Robot Car
+# Multifunctional Robot Car
 
-An Arduino-based robot car developed as part of an **Embedded Systems Programming** course. The robot supports multiple operating modes and can be switched between them in real time using an IR remote control.
+An Arduino-based multifunctional robot car developed as part of an Embedded Systems Programming course.
 
 ---
 ![Robot](arduino_robot_araba.jpeg)
@@ -36,16 +36,18 @@ An Arduino-based robot car developed as part of an **Embedded Systems Programmin
 
 ### 1. Manual Mode
 Control the robot directly with the IR remote:
-- **24** → Forward
-- **82** → Backward
-- **8** → Left
-- **90** → Right
-- **28** → Stop
+- **▲** → Forward
+- **▼** → Backward
+- **◄** → Left
+- **►** → Right
+- **OK** → Stop
+- **1** → Obstacle Avoidance Mode
+- **2** → Line Following Mode
 
-### 2. Line Following Mode (code: 69)
+### 2. Line Following Mode (Button: 2)
 The robot follows a black line using 3 IR sensors. If the line is lost, it attempts a recovery sequence before stopping.
 
-### 3. Obstacle Avoidance Mode (code: 70)
+### 3. Obstacle Avoidance Mode (Button: 1)
 When an obstacle is detected within 20 cm, the robot stops, scans left and right with the servo, and turns toward the clearer path.
 
 ---
